@@ -10,12 +10,14 @@ class Server:
         super(Server, self).__init__(*args, **kwargs)
     
     def server_program(self):
-
+        # TODO : choose a Host and Port
         host = socket.gethostname()
         port = 5000
 
+        # TODO : create a socket Object
         server_socket = socket.socket()
 
+        # TODO : bind the port and host to the socket object
         server_socket.bind((host, port))  
 
 
